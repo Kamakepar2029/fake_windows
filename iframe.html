@@ -1,0 +1,79 @@
+<style>
+body{
+	margin:0px;
+	background: url('/background_blur.jpg');
+	background-size:cover;
+}
+
+.prof_log_img {
+border-radius:90%;
+width:150px;
+}
+
+.prof_title {
+    color:white;
+    font-size:30px;
+}
+
+a.prof__login {
+    background: #cac5c569;
+    color:white;
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    padding:8px 30px;
+    border: 2px solid white;
+}
+
+a.prof__login:hover{
+    background: #d3d3d3d1;
+}
+
+.profile_login {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+</style>
+<title>Log in</title>
+<body>
+<div class="profile_login">
+   <img class="prof_log_img" src="/win_prof.png">
+    <div class="prof_title" id="name">Rassel</div>
+    <a class="prof__login" href="/logged_in.html">Sign in</a>
+</div>
+<script>
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+var names = `Aaron
+Abraham
+Adam
+Adrian
+Aidan
+Alan
+Rassel
+Donald
+Trump
+Albert
+Alejandro
+Alex
+Alexander
+Alfred
+Andrew
+Angel
+Anthony
+Antonio
+Ashton
+Austin`.split('\n');
+document.getElementById('name').innerHTML = names[getRandomInt(names.length)]
+</script>
+</body>
